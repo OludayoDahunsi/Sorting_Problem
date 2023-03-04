@@ -11,13 +11,16 @@ namespace Sorting_Problem
 {
     public class Sorter
     {
+        //Class variables for List
         private List<int> aList;
 
+        //Methods for the sort
         public Sorter(List<int> aList)
         {
             this.aList = aList;
         }
 
+        //Bubble Sort Instances
         public List<int> BubbleSort()
         {
             for (int i = 0; i < aList.Count - 1; i++)
@@ -34,7 +37,7 @@ namespace Sorting_Problem
             }
             return aList;
         }
-
+        //Selection Sort Instamces
         public List<int> SelectionSort()
         {
             for (int i = 0; i < aList.Count - 1; i++)
@@ -54,6 +57,7 @@ namespace Sorting_Problem
             return aList;
         }
 
+        //Insertion Sort Instamces
         public List<int> InsertionSort()
         {
             for (int i = 1; i < aList.Count; i++)
